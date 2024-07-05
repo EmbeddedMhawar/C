@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "c:/Users/mhawa/OneDrive/Bureau/C",
-      "program": "c:/Users/mhawa/OneDrive/Bureau/C/build/Debug/outDebug",
+      "program": "C:/Users/mhawa/OneDrive/Bureau/C/C-Basics.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
