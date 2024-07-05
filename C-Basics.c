@@ -79,9 +79,10 @@ it is an interview trick
 
 Write Source Code to Swap Two Numbers without temp variable.*/
 
-#include "stdio.h"
 
-/* EX1:
+
+/* ########################################################################
+EX1:
 
 Write C Program to Print a Sentence
 
@@ -90,8 +91,32 @@ i should see the Console as following:
 C Programming
 
 */
+
+/*#include "stdio.h"
+int not_main(){
+    printf("C Programming");
+}########################################################################
+*/
+
+/* ########################################################################
+EX2:
+
+Write C Program to Print a Integer Entered by a User
+i should see the Console as following:
+
+Enter a integer: 25
+You entered: 25
+
+
+*/
+/*
+#include "stdio.h"
 int main(){
 
-    printf("C Programming");
+    int i;
+    printf("Enter a integer:");
+    scanf("%d",&i);
+    printf("You entered: %d", i);
 
-}
+}########################################################################
+*/
