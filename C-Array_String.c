@@ -504,3 +504,181 @@ int main()
 	return 0;
 }
 */
+/*Exl: C Program to Find the Frequency of Characters in a String
+This program asks user to enter a string and a character and this program checks how many times that
+character in the string entered by user.
+
+#include <stdio.h>
+
+int main()
+{ 
+    int f=0,length = 20;
+    char string[length],other[length],the_char;
+    printf("Give a string: ");
+    fgets(string,20,stdin);
+    printf("%s",string);
+    fgets(other,20,stdin);
+
+    printf("\nGive the character that you want to find it's frequency: ");
+    scanf("%c",&the_char);
+
+
+    for (int i=0;i<length;i++){
+        if(the_char == string[i]){
+            f+=1;
+        }
+    }
+
+    printf("\n %c is shown %d times in your string.",the_char,f);
+
+
+}*/
+/*
+
+#include <stdio.h>
+
+int main()
+{
+	char text[100], char_to_find, counter = 0;
+	int i;
+
+	// Assigning the string
+	printf("Enter a string : ");
+	fflush(stdin); fflush(stdout);
+	gets(text);
+
+	// Assigning the char to find it
+	printf("Enter a character to find frequency : ");
+	fflush(stdin); fflush(stdout);
+	scanf("%c",&char_to_find);
+
+	// getting the freq of the char which inputed
+	for (i = 0; i < sizeof(text); i++)
+	{
+		if(text[i] == char_to_find)
+		{
+			counter++;
+		}
+	}
+
+	// printing the counter of the char
+	printf("Frequency of e = %d", counter);
+
+	return 0;
+}
+*/
+
+/*EX2: C Program to Find the Length of a String
+You can use standard library function strlen() to find the length of a string
+but, this program computes the length of a string manually without using
+Strlen() funtion.
+
+#include <stdio.h>
+
+int main()
+{ 
+    int l=0,length = 20;
+    char string[length],other[length],the_char;
+    printf("Give a string: ");
+    fgets(string,20,stdin);
+    printf("%s",string);
+
+
+
+    for (int i=0;i<length;i++){
+        if( string[i]>='a' || string[i]>='z' ){
+            l+=1;
+        }
+        else if (string[i]>='A' || string[i]>='Z'){
+            l+=1;
+        }
+    }
+
+    printf("\n %s is %d character long.",string,l);
+
+
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+	char text[100], length = 0;
+	int i;
+
+	// Assigning the string
+	printf("Enter a string : ");
+	fflush(stdin); fflush(stdout);
+	gets(text);
+
+	// Calculating length
+	for (i = 0; text[i] != '\0' ; i++)
+	{
+		length++;
+	}
+
+	// printing the length 
+	printf("Length of string : %d", length);
+
+	return 0;
+}
+*/
+
+
+/*
+EX3: C Program to Reverse String Without Using Library Function
+You can only use library function str1en(),To find the length of the string
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	char text[100],text_i[100];
+	int i,j;
+
+	// Assigning the string
+	printf("Enter a string : ");
+	fflush(stdin); fflush(stdout);
+	gets(text);
+
+	// Inverse string
+    j=0;
+	for (i = strlen(text)-1; i >= 0 ; i--)
+	{
+        text_i[j]=text[i];
+		j++;
+	}
+
+    //printing inverted text
+    printf("%s",text_i);
+
+	return 0;
+}
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	char text[10], revese_text[10];
+	int i,j = 0;
+
+	// Assigning the string
+	printf("Enter a string : ");
+	fflush(stdin); fflush(stdout);
+	gets(text);
+
+	// Reversing process
+	for (i = strlen(text); i > 0 ; i--)
+	{
+		revese_text[j] = text[i-1] ;
+		j++ ;
+	}
+
+	// Printing reverse string
+	printf("Reverse string is : %s", revese_text);
+	return 0;
+}
+*/
