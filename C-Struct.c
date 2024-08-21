@@ -1,3 +1,6 @@
+/* 
+6/2 = 3 passer a autre chose + tu revient etc...*/
+
 /*# include "stdio.h"
 
 struct student {
@@ -165,9 +168,71 @@ struct complex_number take_complex_number(int num)
     printf("\nSum of complex number = %.2f %c %.2fi",z.real_number,sign,z.imag_number);
  }
 
+
+
+
+#include <stdio.h>
+#include <stdalign.h>
+
+struct MyStruct {
+    char c;
+    int i;
+    char d;
+};
+
+int main() {
+    struct MyStruct s;
+    s.c = 'a';
+    s.i= 12;
+    s.d = 'b';
+    printf("Size of MyStruct: %zu\n", sizeof(s));
+    printf("Alignment of MyStruct: %zu\n", alignof(s));
+
+    return 0;
+}
+
+
+#include <stdio.h>
+
+
+union U_job
+{
+	char name [32] ; //30 bytes
+	float salary; //4 bytes
+	int worker_no;// 4 bytes
+
+} U_union;
+
+struct S_job
+{
+	char name [32]; // bytes
+	float salary; //4 bytes
+	int worker_no; // 4 bytes
+
+} S_structure;
+
+
+int main ()
+{
+	printf ("Size of the union is: %d", sizeof (U_union));
+	printf ("\nSize of the structure is: %d", sizeof (S_structure));
+
+	return 0;
+}
 */
 
+#include <stdio.h>
+
+enum Jour{
+    lundi=1, mardi, mercredi, jeudi, vendredi, samedi, dimanche 
+};
 
 
+int main ()
+{   
+    enum Jour j;
 
+    printf("%d",vendredi);
+
+    }
 
